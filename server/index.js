@@ -17,13 +17,7 @@ connection.once("open", function () {
 
 //middleware
 
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    methods: "GET,POST,PUT,DELETE",
-    credentials: true,
-  })
-); // allow cross-origin requests for oauth2.0
+app.use(cors());// allow cross-origin requests for oauth2.0
 
 app.use(express.json()); // parse json bodies
 
