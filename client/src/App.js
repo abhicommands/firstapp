@@ -1,7 +1,11 @@
-import logo from './logo.svg';
-
+import GoogleLogin from "react-google-login";
+import React from "react";
+import Login from "./pages/login";
+import Register from "./pages/register";
 function App() {
-  return null;
+  return (
+    <Register/>
+  );
 }
 
 export default App;
